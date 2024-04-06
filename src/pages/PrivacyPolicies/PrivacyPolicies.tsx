@@ -16,7 +16,7 @@ const PrivacyPolicies = () => {
     } else {
       setIsLoaded(true);
     }
-  }, []);
+  }, [application]);
 
   return (
     <>

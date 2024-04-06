@@ -1,10 +1,4 @@
-import {
-  Navigate,
-  Route,
-  RouterProvider,
-  createBrowserRouter,
-  createRoutesFromElements,
-} from "react-router-dom";
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import {
   HOME_ROUTE,
@@ -15,9 +9,9 @@ import Applications from "./pages/Applications";
 import PrivacyPolicies from "./pages/PrivacyPolicies";
 
 const App = () => {
-  const router = createBrowserRouter(
-    createRoutesFromElements(
-      <Route path="/">
+  return (
+    <HashRouter>
+      <Routes>
         <Route index element={<Navigate to={HOME_ROUTE} replace />} />
         <Route path={HOME_ROUTE} element={<Home />} />
         <Route
@@ -26,11 +20,9 @@ const App = () => {
         />
         <Route path={APPLICATIONS_ROUTE} element={<Applications />} />
         <Route path="*" element={<Navigate to={HOME_ROUTE} replace />} />
-      </Route>
-    )
+      </Routes>
+    </HashRouter>
   );
-
-  return <RouterProvider router={router} />;
 };
 
 export default App;
