@@ -1,0 +1,21 @@
+.box {
+  color: #1a1a1a;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1em;
+
+  a {
+    color: #2778b6;
+  }
+
+  ul {
+    padding: 1em;
+  }
+
+  h6 {
+    padding-top: 0.75em;
+    padding-bottom: 0.5em;
+  }
+}
