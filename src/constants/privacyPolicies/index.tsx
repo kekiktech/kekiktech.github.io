@@ -67,8 +67,8 @@ const privacyPolicies: { [key: string]: ReactElement } = {
       to this privacy notice, we may notify you either by prominently posting a
       notice of such changes or by directly sending you a notification. We
       encourage you to review this privacy notice frequently to be informed of
-      how we are protecting your information.
-      <h6>Contact us</h6>
+      how we are protecting your information.{" "}
+      <b>This policy is effective as of 6 April 2024</b>.<h6>Contact us</h6>
       Reading this privacy notice will help you understand your privacy rights
       and choices. If you do not agree with our policies and practices, please
       do not use our Services. If you still have any questions or concerns,

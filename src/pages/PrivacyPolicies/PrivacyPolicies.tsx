@@ -1,5 +1,5 @@
 import { Box } from "@neo4j-ndl/react";
-import * as st from "./PrivacyPolicies.module.scss";
+import st from "./PrivacyPolicies.module.scss";
 import { useNavigate, useParams } from "react-router-dom";
 import privacyPolicies from "../../constants/privacyPolicies";
 import { useEffect, useState } from "react";
@@ -19,14 +19,14 @@ const PrivacyPolicies = () => {
   }, []);
 
   return (
-    <div className={st.container}>
+    <>
       {isLoaded && (
         <Box borderRadius="sm" padding="6" className={st.box}>
           <h5>Privacy Policy</h5>
           {application && privacyPolicies[application]}
         </Box>
       )}
-    </div>
+    </>
   );
 };
 

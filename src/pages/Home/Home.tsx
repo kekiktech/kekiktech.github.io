@@ -1,5 +1,5 @@
 import { Button } from "@neo4j-ndl/react";
-import * as st from "./Home.module.scss";
+import st from "./Home.module.scss";
 import { useNavigate } from "react-router-dom";
 import { APPLICATIONS_ROUTE } from "../../constants/utils/routes";
 

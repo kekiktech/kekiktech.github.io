@@ -1,5 +1,5 @@
 import { Box, Button } from "@neo4j-ndl/react";
-import * as st from "./Applications.module.scss";
+import st from "./Applications.module.scss";
 import { useNavigate } from "react-router-dom";
 import { PRIVACY_POLICIES_ROUTE } from "../../constants/utils/routes";
 import applications from "../../constants/applications";
